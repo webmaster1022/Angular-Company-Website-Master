@@ -1,0 +1,31 @@
+@import "../../../styles/variables.scss";
+
+// Override Bulma
+
+.navbar-menu {
+  // Menu is not open, normal state
+  &:not(.is-active) {
+    a.navbar-item, a.navbar-link {
+      &.is-active {
+        background-color: inherit !important;
+        border-bottom: 1px solid $secondary;
+      }
+    }
+    .navbar-dropdown.is-transparent {
+      border-top: none;
+
+      a.navbar-item:hover {
+        color: $secondary;
+      }
+    }
+
+  }
+  // Menu is open
+  &.is-active {
+    a.navbar-item, a.navbar-link {
+      &.is-active {
+        border-bottom: none;
+      }
+    }
+  }
+}

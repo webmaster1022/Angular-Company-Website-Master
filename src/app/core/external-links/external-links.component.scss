@@ -1,0 +1,13 @@
+.image {
+  display: inline-block;
+}
+
+.link{
+  display: inline-flex;
+
+  &-text {
+    margin-left: 5px;
+    padding-top: 5px;
+  }
+
+}
